@@ -1,342 +1,309 @@
 <!DOCTYPE html>
-<html><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <title>Cogo Data Collection - Collect &amp; manage field data for any location, store directly in your GIS server.</title>
-    <link rel="stylesheet" href="assets/websites-public-vZEUzz5SG7XiYMwODlPmbVjvF.css" data-bundle="websites-public" integrity="sha256-ZEUzz5SG7XiYMwODlPmbVjvFMpMnoUSjS3dwmOD6VhU=" crossorigin="anonymous">
-  <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="assets/ak1cSg8JQ_EximX8RMwtiYDg3ibW6zXoZFDv-bPFGMy9kv3_HTKYyenWnaLC.jpg" rel="shortcut icon" type="image/x-icon">
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Cogo Data Collection - Collect &amp; manage field data for any location, store directly in your GIS
+        server.</title>
+    <link rel="stylesheet" href="assets/websites-public-vZEUzz5SG7XiYMwODlPmbVjvF.css" data-bundle="websites-public"
+          integrity="sha256-ZEUzz5SG7XiYMwODlPmbVjvFMpMnoUSjS3dwmOD6VhU=" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assets/ak1cSg8JQ_EximX8RMwtiYDg3ibW6zXoZFDv-bPFGMy9kv3_HTKYyenWnaLC.jpg" rel="shortcut icon"
+          type="image/x-icon">
 
-<meta name="description" content="Easily create and deploy mobile forms and surveys to your iPhone, iPad, &amp; Android devices.">
-<meta name="keywords" content="cogo, poi, data, collect, fieldwork, geoserver, wfs, wfs-t, maps, arcgis, gis, gps, collector, tinyows, survey, location">
+    <meta name="description"
+          content="Easily create and deploy mobile forms and surveys to your iPhone, iPad, &amp; Android devices.">
+    <meta name="keywords"
+          content="cogo, poi, data, collect, fieldwork, geoserver, wfs, wfs-t, maps, arcgis, gis, gps, collector, tinyows, survey, location">
 
-<!-- Facebook -->
-<meta property="og:site_name" content="Cogo Data Collection">
-<meta property="og:title" content="Collect &amp; manage field data for any location, store directly in your GIS server.">
-<meta property="og:description" content="Easily create and deploy mobile forms and surveys to your iPhone, iPad, &amp; Android devices.">
-<meta property="og:url" content="http://www.cogocollect.com">
-<meta property="og:image" content="https://lh3.googleusercontent.com/ak1cSg8JQ_EximX8RMwtiYDg3ibW6zXoZFDv-bPFGMy9kv3_HTKYyenWnaLCRzrFYDYfu20HP-tUYkSMzga0kdXU6sW5bQ">
-<meta property="og:type" content="website">
+    <!-- Facebook -->
+    <meta property="og:site_name" content="Cogo Data Collection">
+    <meta property="og:title"
+          content="Collect &amp; manage field data for any location, store directly in your GIS server.">
+    <meta property="og:description"
+          content="Easily create and deploy mobile forms and surveys to your iPhone, iPad, &amp; Android devices.">
+    <meta property="og:url" content="http://www.cogocollect.com">
+    <meta property="og:image" content="assets/facebook.jpg">
+    <meta property="og:type" content="website">
 
-<!-- Twitter -->
-<meta name="twitter:card" content="app">
-<meta name="twitter:title" content="Cogo Data Collection - Collect &amp; manage field data for any location, store directly in your GIS server.">
-<meta name="twitter:description" content="Easily create and deploy mobile forms and surveys to your iPhone, iPad, &amp; Android devices.">
-<meta name="twitter:image:src" content="https://lh3.googleusercontent.com/ak1cSg8JQ_EximX8RMwtiYDg3ibW6zXoZFDv-bPFGMy9kv3_HTKYyenWnaLCRzrFYDYfu20HP-tUYkSMzga0kdXU6sW5bQ">
-<meta name="twitter:domain" content="http://www.cogocollect.com">
-<meta name="twitter:app:name:iphone" content="Cogo Data Collection">
-<meta name="twitter:app:id:iphone" content="1043488559">
-<meta name="twitter:app:name:ipad" content="Cogo Data Collection">
-<meta name="twitter:app:id:ipad" content="1043488559">
-<meta name="twitter:app:name:googleplay" content="Cogo Data Collection">
-<meta name="twitter:app:id:googleplay" content="com.baasgeo.cogo">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="app">
+    <meta name="twitter:title"
+          content="Cogo Data Collection - Collect &amp; manage field data for any location, store directly in your GIS server.">
+    <meta name="twitter:description"
+          content="Easily create and deploy mobile forms and surveys to your iPhone, iPad, &amp; Android devices.">
+    <meta name="twitter:image:src" content="assets/twitter.jpg">
+    <meta name="twitter:domain" content="http://www.cogocollect.com">
+    <meta name="twitter:app:name:iphone" content="Cogo Data Collection">
+    <meta name="twitter:app:id:iphone" content="1043488559">
+    <meta name="twitter:app:name:ipad" content="Cogo Data Collection">
+    <meta name="twitter:app:id:ipad" content="1043488559">
+    <meta name="twitter:app:name:googleplay" content="Cogo Data Collection">
+    <meta name="twitter:app:id:googleplay" content="com.baasgeo.cogo">
 
-<!-- Apple Smart App Banner -->
-<meta name="apple-itunes-app" content="app-id=1043488559,
-  affiliate-data=1001l5Yq">
+    <!-- Apple Smart App Banner -->
+    <meta name="apple-itunes-app" content="app-id=1043488559,affiliate-data=1001l5Yq">
 
+    <link href="assets/css.css" rel="stylesheet" type="text/css">
 
-<link href="assets/css.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        #public-landing-page .container {
+            font-family: 'Roboto', sans-serif !important;
+        }
 
-<style type="text/css">
-    #public-landing-page .container {
-      font-family: 'Roboto', sans-serif !important;
-    }
-    #public-landing-page.template-1 .hero,
-    #public-landing-page.template-2 .hero,
-    #public-landing-page.template-3 .hero,
-    #public-landing-page.template-4 .hero,
-    #public-landing-page.template-7 .hero,
-    #public-landing-page.template-8 .hero .graphic,
-    #public-landing-page.template-9 .bg-color,
-    #public-landing-page .store-badge-white-text,
-    #public-landing-page.template-1color .hero,
-    #public-landing-page.template-2color .hero {
-      background: #1BA2CB;
-    }
-    #public-landing-page.template-5 .hero h2,
-    #public-landing-page.template-6 .hero h1,
-    #public-landing-page.template-8 .hero,
-    #public-landing-page.template-9 .hero h2,
-    #public-landing-page .hero .btn,
-    #public-landing-page .navbar .btn,
-    #public-landing-page .navbar.invert-navbar a,
-    #public-landing-page footer a,
-    #public-landing-page .benefit-header {
-      color: #1BA2CB;
-    }
-    #public-landing-page .btn.btn-primary.btn-primary-invert,
-    #public-landing-page .navbar.invert-navbar .btn.btn-primary,
-    #public-landing-page .navbar .navbar-collapse.in .btn.btn-primary,
-    #public-landing-page .navbar .navbar-toggle .icon-bar,
-    #public-landing-page .download-text {
-      color: white;
-      background-color: #1BA2CB;
-    }
+        #public-landing-page.template-1 .hero,
+        #public-landing-page.template-2 .hero,
+        #public-landing-page.template-3 .hero,
+        #public-landing-page.template-4 .hero,
+        #public-landing-page.template-7 .hero,
+        #public-landing-page.template-8 .hero .graphic,
+        #public-landing-page.template-9 .bg-color,
+        #public-landing-page .store-badge-white-text,
+        #public-landing-page.template-1color .hero,
+        #public-landing-page.template-2color .hero {
+            background: #1BA2CB;
+        }
 
+        #public-landing-page.template-5 .hero h2,
+        #public-landing-page.template-6 .hero h1,
+        #public-landing-page.template-8 .hero,
+        #public-landing-page.template-9 .hero h2,
+        #public-landing-page .hero .btn,
+        #public-landing-page .navbar .btn,
+        #public-landing-page .navbar.invert-navbar a,
+        #public-landing-page footer a,
+        #public-landing-page .benefit-header {
+            color: #1BA2CB;
+        }
 
-    #public-landing-page.template-1 .hero,
-    #public-landing-page.template-2 .hero,
-    #public-landing-page.template-4 .hero {
-      overflow: hidden;
-    }
-    #public-landing-page .hero .blurred-cover {
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      z-index: 1px;
-      background-image: url('https://lh3.googleusercontent.com/PYVQiZihXqo2DeNgXn4nR2AJeL_ubnP77RCB8jQleTS9s-0t31ifJ0JrrMlLI-09kZIRVyOcpQA_6__VtEje0_Z4nd8DVA');
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: cover;
-      -webkit-filter: blur(50px);
-      -moz-filter: blur(50px);
-      -o-filter: blur(50px);
-      -ms-filter: blur(50px);
-      filter: blur(50px);
-      margin: -60% -40% -40%;
-    }
-    #public-landing-page .hero .blurred-cover .darken {
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      z-index: 2px;
-      background: rgba(0,0,0,.3);
-    }
+        #public-landing-page .btn.btn-primary.btn-primary-invert,
+        #public-landing-page .navbar.invert-navbar .btn.btn-primary,
+        #public-landing-page .navbar .navbar-collapse.in .btn.btn-primary,
+        #public-landing-page .navbar .navbar-toggle .icon-bar,
+        #public-landing-page .download-text {
+            color: white;
+            background-color: #1BA2CB;
+        }
 
-  @media screen and (max-width: 767px) {
-      #public-landing-page.template-9 .hero h1 {
-        background: #1BA2CB;
-      }
-  }
+        #public-landing-page.template-1 .hero,
+        #public-landing-page.template-2 .hero,
+        #public-landing-page.template-4 .hero {
+            overflow: hidden;
+        }
 
-</style>
+        #public-landing-page .hero .blurred-cover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 1px;
+            background-image: url('assets/maps.jpg');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            -webkit-filter: blur(50px);
+            -moz-filter: blur(50px);
+            -o-filter: blur(50px);
+            -ms-filter: blur(50px);
+            filter: blur(50px);
+            margin: -60% -40% -40%;
+        }
+
+        #public-landing-page .hero .blurred-cover .darken {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 2px;
+            background: rgba(0, 0, 0, .3);
+        }
+
+        @media screen and (max-width: 767px) {
+            #public-landing-page.template-9 .hero h1 {
+                background: #1BA2CB;
+            }
+        }
+
+    </style>
 
 
 </head>
-<body><div id="skit-controller"><div id="public-landing-page" class="
-    template-7
-    
-    
-  ">
+<body>
+<div id="skit-controller">
+    <div id="public-landing-page" class="template-7">
 
-  <section class="hero">
-    <div class="bottom-shadow"></div>
-  <div class="container">
-    <nav class="navbar navbar-default
-  
-   invert-buttons
-  ">
-  <div class="container-fluid">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand visible-xs" href="file:///">
-          <img alt="Cogo Data Collection" src="assets/ak1cSg8JQ_EximX8RMwtiYDg3ibW6zXoZFDv-bPFGMy9kv3_HTKYyenWnaLC.jpg" class="app-icon">
-        </a>
-    </div>
+        <section class="hero">
+            <div class="bottom-shadow"></div>
+            <div class="container">
+                <nav class="navbar navbar-default invert-buttons">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand visible-xs" href="file:///">
+                                <img alt="Cogo Data Collection"
+                                     src="assets/ak1cSg8JQ_EximX8RMwtiYDg3ibW6zXoZFDv-bPFGMy9kv3_HTKYyenWnaLC.jpg"
+                                     class="app-icon">
+                            </a>
+                        </div>
 
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="visible-xs"><a href="file:///">Home Page</a></li>
-          <li class="visible-xs"><a href="https://itunes.apple.com/app/id1043488559?mt=8" target="_blank">Download from App Store</a></li>
-          <li class="visible-xs"><a href="https://play.google.com/store/apps/details?id=com.baasgeo.cogo" target="_blank">Download from Google Play</a></li>
-            <li><a href="http://www.baasgeo.com/posts/" target="_blank">Blog</a></li>
-            <li><a href="https://cogo-baasgeo.rhcloud.com/login" class="btn btn-primary" target="_blank">Login</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="visible-xs"><a href="file:///">Home Page</a></li>
+                                <li class="visible-xs"><a href="https://itunes.apple.com/app/id1043488559?mt=8"
+                                                          target="_blank">Download from App Store</a></li>
+                                <li class="visible-xs"><a
+                                        href="https://play.google.com/store/apps/details?id=com.baasgeo.cogo"
+                                        target="_blank">Download from Google Play</a></li>
+                                <li><a href="http://www.baasgeo.com/posts/" target="_blank">Blog</a></li>
+                                <li><a href="https://cogo-baasgeo.rhcloud.com/login" class="btn btn-primary"
+                                       target="_blank">Login</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
 
+                <div class="row headernav">
+                    <div class="col-sm-12">
+                        <h1> Cogo Data Collection
+                        </h1>
+                    </div>
+                </div>
+                <hr>
+                <div class="row hero-main-content">
+                    <div class="hero-text-container col-sm-7 col-xs-12">
+                        <h2>Collect &amp; manage field data for any location, store directly in your GIS server.</h2>
+                        <p>Easily create and deploy mobile forms and surveys to your iPhone, iPad, &amp; Android
+                            devices.</p>
+                        <a href="https://itunes.apple.com/app/id1043488559?mt=8" class="app-store-badge"
+                           target="_blank">
+                            <img src="assets/app-store-black-on-color2x-vUVAkYHUgzYCyeyfUGm8cda3C.png">
+                        </a>
 
+                        <a href="https://play.google.com/store/apps/details?id=com.baasgeo.cogo"
+                           class="google-play-badge" target="_blank">
+                            <img src="assets/google-play-black-on-color2x-vFjjxY1EfmMDPxrMbxhjImUYZ.png">
+                        </a>
 
+                    </div>
+                    <div class="hero-graphic-container col-sm-5 col-xs-12 text-center">
+                        <img src="assets/iphone.png" class="screenshot">
+                    </div>
+                </div>
 
-
-
-
-      <div class="row headernav">
-        <div class="col-sm-12">
-          <h1>  Cogo Data Collection
-</h1>
-        </div>
-      </div>
-      <hr>
-      <div class="row hero-main-content">
-        <div class="hero-text-container col-sm-7 col-xs-12">
-          <h2>Collect &amp; manage field data for any location, store directly in your GIS server.</h2>
-            <p>Easily create and deploy mobile forms and surveys to your iPhone, iPad, &amp; Android devices.</p>
-            <a href="https://itunes.apple.com/app/id1043488559?mt=8" class="app-store-badge" target="_blank">
-    <img src="assets/app-store-black-on-color2x-vUVAkYHUgzYCyeyfUGm8cda3C.png">
-  </a>
-
-  <a href="https://play.google.com/store/apps/details?id=com.baasgeo.cogo" class="google-play-badge" target="_blank">
-    <img src="assets/google-play-black-on-color2x-vFjjxY1EfmMDPxrMbxhjImUYZ.png">
-  </a>
-
-        </div>
-        <div class="hero-graphic-container col-sm-5 col-xs-12 text-center">
-          <img src="assets/iphone.png" class="screenshot">
-        </div>
-      </div>
-
-
-
-  </div>
-</section>
-
-      <section class="gallery">
-    <div class="container">
-      <div class="row">
-        <p class="section-header">Screenshots of <strong>Cogo Data Collection</strong></p>
-        <div class="gallery-screenshots">
-            <div class="gallery-scroll-screenshot">
-              <img src="assets/PYVQiZihXqo2DeNgXn4nR2AJeL_ubnP77RCB8jQleTS9s-0t31ifJ0JrrMlL.jpg">
             </div>
-            <div class="gallery-scroll-screenshot">
-              <img src="assets/n2ocsfxovm0dPnTZC1kIRSHuLhqdddkDVKWldNuUxnqo2xOxWbq1aNyZYA9T.jpg">
-            </div>
-            <div class="gallery-scroll-screenshot">
-              <img src="assets/czNRNaG2_eIN_sPHJmMTl9OQXwWPtFlO78GjQgYNaXjAO1x-42nDPxXHZQba.jpg">
-            </div>
-            <div class="gallery-scroll-screenshot">
-              <img src="assets/FjiMgJGwDFPviyy0o47uL8YnWAy5T6tqXy7X6VA-SjMoWMfPyAY9yDmheaMk.jpg">
-            </div>
-        </div>
-      </div>
-    </div>
-  </section>
+        </section>
 
-    <section class="description">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-5 col-xs-12 pull-right">
-            <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
-    <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <img src="assets/iPhone6White_004.txt" class="screenshot" alt="Screenshot of Cogo Data Collection">
-        </div>
-        <div class="item">
-          <img src="assets/iPhone6White_002.txt" class="screenshot" alt="Screenshot of Cogo Data Collection">
-        </div>
-        <div class="item">
-          <img src="assets/iPhone6White.txt" class="screenshot" alt="Screenshot of Cogo Data Collection">
-        </div>
-        <div class="item">
-          <img src="assets/iPhone6White_003.txt" class="screenshot" alt="Screenshot of Cogo Data Collection">
-        </div>
-    </div>
-  </div>
-      </div>
-      <div class="col-sm-7 col-xs-12 description-text">
-        <p>Collect &amp; manage field data for any location, store directly in your GIS server.<br><br>Cogo
- is a simple and easy solution for real-time field location and 
-attribute data collection. It's a mobile GIS tool for land and field 
-surveyors and anyone dealing with environmental and GIS data. Cogo makes
- location data collection or field surveying fun, faster and more 
-efficient.<br><br>Just connect the app with your GIS server (WFS-T) such as GeoServer and start collecting!<br>Extend
- the reach of your GIS server to your field workforce and use Cogo to 
-improve the accuracy and currency of your spatial data. Using Cogo admin
- panel you can create and configure maps, invite users and grant access 
-to fit your workflow needs.<br><br>Speed up your workflow and make the 
-data collection more efficient. Take advantage of your own GIS data and 
-post process your data using Desktop GIS software like ArcGIS, ArcGIS 
-Online or QGIS and other tools like MS Excel.<br><br>Features: <br>* Collect and update Spatial Data, using the map or GPS<br>* Fill out easy-to-use map-driven forms<br>* Customize Your Own Data Collection Forms<br>* Your data syncs directly to your WFS-T server<br>* Attach photos<br>* As easy as Google Maps<br><br>Work together<br>* Data collection with multiple users<br>* Invite users and grant access<br><br>Privacy<br>* Your data is stored directly in your own GIS server, no strings attached<br>* Cogo doesn't track you or saves your data locally<br><br>Technology<br>* Works with WFS-T compliant services such as GeoServer, ArcGIS server or TinyOWS<br>* Works if you don't have a GIS server<br><br>Cogo is aiming to be helpful in a number of applications including:<br>* Environmental surveys,<br>* Woodland surveys,<br>* Forestry planning and woodland management surveys,<br>* Agriculture and soils' types surveys,<br>* Road constructions,<br>* Land surveying,<br>* Solar panels applications,<br>* Roofing and fencing,<br>* Tree surveys,<br>* GPS surveying,<br>* Site surveying and soil samples gathering<br><br>If you are surveyor of any kind please check out this app and discover how it can save your time.</p>
-          <a href="https://itunes.apple.com/app/id1043488559?mt=8" class="app-store-badge" target="_blank">
+        <section class="gallery">
+            <div class="container">
+                <div class="row">
+                    <p class="section-header">Screenshots of <strong>Cogo Data Collection</strong></p>
+                    <div class="gallery-screenshots">
+                        <div class="gallery-scroll-screenshot">
+                            <img src="assets/PYVQiZihXqo2DeNgXn4nR2AJeL_ubnP77RCB8jQleTS9s-0t31ifJ0JrrMlL.jpg">
+                        </div>
+                        <div class="gallery-scroll-screenshot">
+                            <img src="assets/n2ocsfxovm0dPnTZC1kIRSHuLhqdddkDVKWldNuUxnqo2xOxWbq1aNyZYA9T.jpg">
+                        </div>
+                        <div class="gallery-scroll-screenshot">
+                            <img src="assets/czNRNaG2_eIN_sPHJmMTl9OQXwWPtFlO78GjQgYNaXjAO1x-42nDPxXHZQba.jpg">
+                        </div>
+                        <div class="gallery-scroll-screenshot">
+                            <img src="assets/FjiMgJGwDFPviyy0o47uL8YnWAy5T6tqXy7X6VA-SjMoWMfPyAY9yDmheaMk.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="description">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-5 col-xs-12 pull-right">
+                        <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <img src="assets/czNRNaG2_eIN_sPHJmMTl9OQXwWPtFlO78GjQgYNaXjAO1x-42nDPxXHZQba.jpg"
+                                         class="screenshot" alt="Screenshot of Cogo Data Collection">
+                                </div>
+                                <div class="item">
+                                    <img src="assets/FjiMgJGwDFPviyy0o47uL8YnWAy5T6tqXy7X6VA-SjMoWMfPyAY9yDmheaMk.jpg"
+                                         class="screenshot" alt="Screenshot of Cogo Data Collection">
+                                </div>
+                                <div class="item">
+                                    <img src="assets/PYVQiZihXqo2DeNgXn4nR2AJeL_ubnP77RCB8jQleTS9s-0t31ifJ0JrrMlL.jpg"
+                                         class="screenshot" alt="Screenshot of Cogo Data Collection">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-7 col-xs-12 description-text">
+                        <p>Collect &amp; manage field data for any location, store directly in your GIS server.<br><br>Cogo
+                            is a simple and easy solution for real-time field location and
+                            attribute data collection. It's a mobile GIS tool for land and field
+                            surveyors and anyone dealing with environmental and GIS data. Cogo makes
+                            location data collection or field surveying fun, faster and more
+                            efficient.<br><br>Just connect the app with your GIS server (WFS-T) such as GeoServer and
+                            start collecting!<br>Extend
+                            the reach of your GIS server to your field workforce and use Cogo to
+                            improve the accuracy and currency of your spatial data. Using Cogo admin
+                            panel you can create and configure maps, invite users and grant access
+                            to fit your workflow needs.<br><br>Speed up your workflow and make the
+                            data collection more efficient. Take advantage of your own GIS data and
+                            post process your data using Desktop GIS software like ArcGIS, ArcGIS
+                            Online or QGIS and other tools like MS Excel.<br><br>Features: <br>* Collect and update
+                            Spatial Data, using the map or GPS<br>* Fill out easy-to-use map-driven forms<br>* Customize
+                            Your Own Data Collection Forms<br>* Your data syncs directly to your WFS-T server<br>*
+                            Attach photos<br>* As easy as Google Maps<br><br>Work together<br>* Data collection with
+                            multiple users<br>* Invite users and grant access<br><br>Privacy<br>* Your data is stored
+                            directly in your own GIS server, no strings attached<br>* Cogo doesn't track you or saves
+                            your data locally<br><br>Technology<br>* Works with WFS-T compliant services such as
+                            GeoServer, ArcGIS server or TinyOWS<br>* Works if you don't have a GIS server<br><br>Cogo is
+                            aiming to be helpful in a number of applications including:<br>* Environmental surveys,<br>*
+                            Woodland surveys,<br>* Forestry planning and woodland management surveys,<br>* Agriculture
+                            and soils' types surveys,<br>* Road constructions,<br>* Land surveying,<br>* Solar panels
+                            applications,<br>* Roofing and fencing,<br>* Tree surveys,<br>* GPS surveying,<br>* Site
+                            surveying and soil samples gathering<br><br>If you are surveyor of any kind please check out
+                            this app and discover how it can save your time.</p>
+                        <a href="https://itunes.apple.com/app/id1043488559?mt=8" class="app-store-badge"
+                           target="_blank">
     <span class="store-badge-white-text">
       <img src="assets/app-store-white-text2x-vQwYlBirSdJYWCIXgW9rOvkVR.png">
     </span>
-  </a>
+                        </a>
 
-  <a href="https://play.google.com/store/apps/details?id=com.baasgeo.cogo" class="google-play-badge" target="_blank">
+                        <a href="https://play.google.com/store/apps/details?id=com.baasgeo.cogo"
+                           class="google-play-badge" target="_blank">
     <span class="store-badge-white-text">
       <img src="assets/google-play-white-text2x-vabUav6M_t16MBbSoBJTg8ciB.png">
     </span>
-  </a>
+                        </a>
 
-      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="footer-nav col-xs-12 col-sm-8 pull-right text-right">
+                    <a href="http://www.baasgeo.com/posts/" target="_blank">Blog</a>
+
+                </div>
+            </div>
+        </footer>
+
     </div>
-  </div>
-</section>
-    <footer>
-    <div class="container">
-      <div class="footer-nav col-xs-12 col-sm-8 pull-right text-right">
-          <a href="http://www.baasgeo.com/posts/" target="_blank">Blog</a>
-
-
-
-
-      </div>
-    </div>
-  </footer>
 
 </div>
-
 <script src="assets/jquery.js"></script>
 <script src="assets/bootstrap.js"></script>
-</div>
-  <script>
-    window.skit = (function() {
-      var objects = {};
-      var modules = {};
-      function define(resourcePath, deps, fn) {
-        modules[resourcePath] = {deps: deps, fn: fn};
-      }
-      function load(resourcePath) {
-        if (!(resourcePath in objects)) {
-          if (resourcePath in modules) {
-            var module = modules[resourcePath];
-            var args = [];
-            for (var i = 0; i < module.deps.length; i++) {
-              args.push(load(module.deps[i]));
-            }
-            objects[resourcePath] = module.fn.apply(window, args);
-          } else {
-            objects[resourcePath] = null;
-          }
-        }
-        return objects[resourcePath];
-      }
-      return {
-        define: define,
-        modules: modules,
-        env: {
- "productionAPI": true,
- "appEngineHost": "https://launchkit-images.appspot.com/",
- "publicRoot": "public_hosted"
-},
-        load: load
-      };
-    })();
-  </script>
-    <script src="assets/websites-public-voxdSx4zqEBE5nxej0pNRxUoU.js" data-bundle="websites-public" integrity="sha256-oxdSx4zqEBE5nxej0pNRxUoUAPGBfckeON8+R4dxTTw=" crossorigin="anonymous"></script>
-  <script>
-    (function() {
-        var netproxy = skit.load("skit.platform.netproxy:js");
-          netproxy.__register__("lk", {
- "name": "lk",
- "csrfToken": "y3whgdfcv/Pu2lUBKZCeOg=="
-});
-
-      var ControllerKlass = skit.load("public_hosted.HostedWebsite:js");
-      var controller = new ControllerKlass({});
-
-      var controllerProperties = {"domain":"www.cogocollect.com","website":{"facebookLink":"","domain":"www.cogocollect.com","disableLkBranding":null,"termsLink":"","waitingListLabel":null,"appName":"Cogo Data Collection","images":{"screenshots":{"iPhone":[{"url":"https://lh3.googleusercontent.com/PYVQiZihXqo2DeNgXn4nR2AJeL_ubnP77RCB8jQleTS9s-0t31ifJ0JrrMlLI-09kZIRVyOcpQA_6__VtEje0_Z4nd8DVA","imageId":"jCAzz3hCw8Y"},{"url":"https://lh3.googleusercontent.com/n2ocsfxovm0dPnTZC1kIRSHuLhqdddkDVKWldNuUxnqo2xOxWbq1aNyZYA9TR0y_bo7uFaScxqbhvmCNPxgLM8uahFEK","imageId":"HG-gxUv7Ij8"},{"url":"https://lh3.googleusercontent.com/czNRNaG2_eIN_sPHJmMTl9OQXwWPtFlO78GjQgYNaXjAO1x-42nDPxXHZQbaOPI27M4HFCSP_-MwmXQMSPJRf2-y9--cVQ","imageId":"EA9A3HMC82w"},{"url":"https://lh3.googleusercontent.com/FjiMgJGwDFPviyy0o47uL8YnWAy5T6tqXy7X6VA-SjMoWMfPyAY9yDmheaMkBTCDtaq5bnvhYqb8WTo79VQNTMCbJMcVFQ","imageId":"Yf5EDRJ3ruk"}]},"icon":{"url":"https://lh3.googleusercontent.com/ak1cSg8JQ_EximX8RMwtiYDg3ibW6zXoZFDv-bPFGMy9kv3_HTKYyenWnaLCRzrFYDYfu20HP-tUYkSMzga0kdXU6sW5bQ","id":"Pk5wrLE4dxs"}},"blogLink":"http://www.baasgeo.com/posts/","supportLink":"","longDescription":"Collect \u0026 manage field data for any location, store directly in your GIS server.\n\nCogo is a simple and easy solution for real-time field location and attribute data collection. It\u0027s a mobile GIS tool for land and field surveyors and anyone dealing with environmental and GIS data. Cogo makes location data collection or field surveying fun, faster and more efficient.\n\nJust connect the app with your GIS server (WFS-T) such as GeoServer and start collecting!\nExtend the reach of your GIS server to your field workforce and use Cogo to improve the accuracy and currency of your spatial data. Using Cogo admin panel you can create and configure maps, invite users and grant access to fit your workflow needs.\n\nSpeed up your workflow and make the data collection more efficient. Take advantage of your own GIS data and post process your data using Desktop GIS software like ArcGIS, ArcGIS Online or QGIS and other tools like MS Excel.\n\nFeatures: \n* Collect and update Spatial Data, using the map or GPS\n* Fill out easy-to-use map-driven forms\n* Customize Your Own Data Collection Forms\n* Your data syncs directly to your WFS-T server\n* Attach photos\n* As easy as Google Maps\n\nWork together\n* Data collection with multiple users\n* Invite users and grant access\n\nPrivacy\n* Your data is stored directly in your own GIS server, no strings attached\n* Cogo doesn\u0027t track you or saves your data locally\n\nTechnology\n* Works with WFS-T compliant services such as GeoServer, ArcGIS server or TinyOWS\n* Works if you don\u0027t have a GIS server\n\nCogo is aiming to be helpful in a number of applications including:\n* Environmental surveys,\n* Woodland surveys,\n* Forestry planning and woodland management surveys,\n* Agriculture and soils\u0027 types surveys,\n* Road constructions,\n* Land surveying,\n* Solar panels applications,\n* Roofing and fencing,\n* Tree surveys,\n* GPS surveying,\n* Site surveying and soil samples gathering\n\nIf you are surveyor of any kind please check out this app and discover how it can save your time.","font":"Roboto","playStoreId":"com.baasgeo.cogo","isPro":null,"waitingListLink":"","primaryColor":"#1BA2CB","keywords":"cogo, poi, data, collect, fieldwork, geoserver, wfs, wfs-t, maps, arcgis, gis, gps, collector, tinyows, survey, location","googleAnalyticsId":"","itunesProviderToken":null,"shortDescription":"Easily create and deploy mobile forms and surveys to your iPhone, iPad, \u0026 Android devices.","id":"nbmicp7K6TU","loginLink":"https://cogo-baasgeo.rhcloud.com/login","privacyLink":"","itunesCampaignToken":null,"author":"Bart Baas","tagline":"Collect \u0026 manage field data for any location, store directly in your GIS server.","frameScreenshots":"white","customCss":null,"itunesId":"1043488559","pressLink":"","instagramLink":"","customLinkLabel":null,"twitterLink":"","template":"7","mixpanelBadge":null,"customLink":null,"homeUrl":"/"}};
-      for (var k in controllerProperties) {
-        controller[k] = controllerProperties[k];
-      }
-
-      window.skit.controller = controller;
-      controller.recursiveLoad();
-      controller.recursiveReady();
-    })();
-  </script>
-</body></html>
+</body>
+</html>

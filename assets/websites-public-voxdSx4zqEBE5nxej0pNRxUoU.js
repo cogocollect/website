@@ -1,4 +1,4 @@
-skit.define("skit.platform.iter:js",[],function(){return function(){function e(){for(var e=0;e<arguments.length;e++)if("function"==typeof arguments[e]){n=arguments[e]();break}}var t={exports:{}},n=null;e.amd=!0;var r=function(){"use strict";/**
+/**
  * @module
  * @license
  * (c) 2014 Cluster Labs, Inc. https://cluster.co/
