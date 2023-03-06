@@ -1,0 +1,49 @@
+Author = 'B. Baas'
+baseURL = 'https://www.cogocollect.nl/'
+disableKinds = ["taxonomy", "taxonomyTerm"]
+enableEmoji = true
+languageCode = 'nl-nl'
+title = 'Cogo Collect'
+#uglyURLs = true
+#relativeURLs = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+    unsafe = true
+
+[module]
+[[module.mounts]]
+  source = "assets"
+  target = "assets"
+[[module.mounts]]
+  source = "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+  target = "assets/js/bootstrap.bundle.min.js"
+[[module.mounts]]
+  source = "node_modules/bs5-lightbox/dist/index.bundle.min.js"
+  target = "assets/js/bs5-lightbox.bundle.min.js"
+[[module.mounts]]
+  source = "static"
+  target = "static"
+[[module.mounts]]
+  source = "node_modules/bootstrap-icons/bootstrap-icons.svg"
+  target = "static/bootstrap-icons.svg"
+
+[params]
+  description = 'Cogo Collect is de slimme en veelzijdige app voor het registreren van uiteenlopende geo-data en staat voor gebruiksvriendelijke, complete en betaalbare GIS software.'
+  email = 'info@cogocollect.com'
+  subtitle = 'Cogo Collect geo-data app | Maakt GIS Eenvoudig'
+
+[privacy]
+[privacy.disqus]
+  disable = true
+[privacy.googleAnalytics]
+  disable = true
+[privacy.instagram]
+  disable = true
+[privacy.twitter]
+  disable = true
+[privacy.vimeo]
+  disable = true
+[privacy.youtube]
+  disable = true

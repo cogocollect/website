@@ -1,0 +1,413 @@
+{{ define "main" }}
+<section class="hero bg-white">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-12 col-lg-6 order-2 order-lg-1  mt-4 mt-lg-0 pt-4 pt-lg-0">
+                <div class="hero-content pe-md-0 pe-lg-5">
+                    <span class="pre-title text-dark small fw-bold inline-block position-relative text-uppercase">Geo-data app</span>
+                    <h1 class="display-4 fw-bolder text-dark mt-3">{{ .Site.Title }}</h1>
+                    <p class="mt-3 mb-0">{{ .Site.Title }} is een slimme en veelzijdige app voor het
+                        registreren van uiteenlopende geo-data. Uw gegevens worden direct opgeslagen in een datacenter
+                        naar keuze via open standaarden.</p>
+                    <p></p>
+                    <p>Op zoek naar <strong>100% data-eigendom</strong>?</p>
+                    <a href="mailto:{{ .Site.Params.Email }}" class="btn btn-primary mt-4 fw-bold">Vraag meer
+                        informatie aan</a>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-6 order-1 order-lg-2">
+                <div class="hero-image wings wings-primary position-relative mx-3 mx-md-4 ms-lg-5">
+                    <img class="rounded img-fluid position-relative" src="/img/hero.webp">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="portfolio bg-white">
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 px-0">
+                <div class="portfolio-item position-relative overflow-hidden" data-toggle="lightbox"
+                     data-gallery="gallery" data-src="/img/screenshot-topics-lg.webp">
+                    <img class="portfolio-item-img img-fluid w-100" src="/img/screenshot-topics.webp">
+                    <div class="portfolio-item-content position-absolute rounded text-center">
+                        <div class="position-absolute top-50 start-50 translate-middle">
+                            <h3 class="project-title">Topics</h3>
+                            <span class="project-type text-uppercase small">Kaartlaag groepen</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 px-0">
+                <div class="portfolio-item position-relative overflow-hidden" data-toggle="lightbox"
+                     data-gallery="gallery" data-src="/img/screenshot-view-lg.webp">
+                    <img class="portfolio-item-img img-fluid w-100" src="/img/screenshot-view.webp" loading="lazy">
+                    <div class="portfolio-item-content position-absolute rounded text-center">
+                        <div class="position-absolute top-50 start-50 translate-middle">
+                            <h3 class="project-title">Kaartweergave</h3>
+                            <span class="project-type text-uppercase small">Via WMS en WFS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 px-0">
+                <div class="portfolio-item position-relative overflow-hidden" data-toggle="lightbox"
+                     data-gallery="gallery" data-src="/img/screenshot-edit-lg.webp">
+                    <img class="portfolio-item-img img-fluid w-100" src="/img/screenshot-edit.webp" loading="lazy">
+                    <div class="portfolio-item-content position-absolute rounded text-center">
+                        <div class="position-absolute top-50 start-50 translate-middle">
+                            <h3 class="project-title">Bewerken</h3>
+                            <span class="project-type text-uppercase small">Attribuut formulier</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 px-0">
+                <div class="portfolio-item position-relative overflow-hidden" data-toggle="lightbox"
+                     data-gallery="gallery" data-src="/img/screenshot-search-lg.webp">
+                    <img class="portfolio-item-img img-fluid w-100" src="/img/screenshot-search.webp" loading="lazy">
+                    <div class="portfolio-item-content position-absolute rounded text-center">
+                        <div class="position-absolute top-50 start-50 translate-middle">
+                            <h3 class="project-title">Zoeken</h3>
+                            <span class="project-type text-uppercase small">Zoeken op adres, gegevens of coordinaat</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 px-0">
+                <div class="portfolio-item position-relative overflow-hidden" data-toggle="lightbox"
+                     data-gallery="gallery" data-src="/img/screenshot-snapping-lg.webp">
+                    <img class="portfolio-item-img img-fluid w-100" src="/img/screenshot-snapping.webp" loading="lazy">
+                    <div class="portfolio-item-content position-absolute rounded text-center">
+                        <div class="position-absolute top-50 start-50 translate-middle">
+                            <h3 class="project-title">Geometrie bewerken</h3>
+                            <span class="project-type text-uppercase small">Punten, lijnen en vlakken</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 px-0">
+                <div class="portfolio-item position-relative overflow-hidden" data-toggle="lightbox"
+                     data-gallery="gallery" data-src="/img/screenshot-filter-lg.webp">
+                    <img class="portfolio-item-img img-fluid w-100" src="/img/screenshot-filter.webp" loading="lazy">
+                    <div class="portfolio-item-content position-absolute rounded text-center">
+                        <div class="position-absolute top-50 start-50 translate-middle">
+                            <h3 class="project-title">Filtering</h3>
+                            <span class="project-type text-uppercase small">Filteren op gegevens</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section bg-white" id="functionality">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="section-head text-center mx-auto narrow">
+                    <span class="pre-title small position-relative fw-bold text-dark text-uppercase">100% data-eigendom</span>
+                    <h2 class="display-6 fw-bolder text-dark mt-3">Zo werkt {{ .Site.Title }}</h2>
+                    <p class="section-subtitle mt-3 mb-0">{{ .Site.Title }} heeft een unieke manier om ruimtelijke
+                        gegevens vast te leggen: uw gegevens worden rechtstreeks op uw eigen <a
+                                href="https://nl.wikipedia.org/wiki/Geografisch_informatiesysteem" target="_blank">GIS
+                            server</a> opgeslagen via het open protocol <strong>Web Feature Service</strong> (<a
+                                href="https://docs.geoserver.org/stable/en/user/services/wfs/reference.html"
+                                target="_blank" title="Web Feature Service & Transactions">WFS-T</a>).</p>
+                    <p></p>
+                    <p>Gegevens worden hierdoor gedecentraliseerd opgeslagen, veilig en in eigen beheer. Precies op de
+                        plek waar u dit wilt. Via open standaarden kunt u andere software integreren in uw eigen
+                        datacenter. Bij {{ .Site.Title }} staat <strong title="Het vermogen om alle digitale hulpbronnen zelf – zonder derden of externe invloeden – te beheersen">datasoevereiniteit</strong> voorop.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="service-box text-center mt-5">
+                    <svg class="bi text-primary" width="2rem" height="2rem" fill="currentColor">
+                        <use xlink:href="bootstrap-icons.svg#server"/>
+                    </svg>
+                    <h5 class="fw-light text-primary mt-4 text-uppercase">Koppel</h5>
+                    <p class="service-box-text mt-3 mb-0">Maak in de {{ .Site.Title }} admin omgeving verbinding met uw
+                        <a href="https://nl.wikipedia.org/wiki/Geografisch_informatiesysteem" target="_blank">GIS
+                            server</a>, zoals <a href="https://geoserver.org/" target="_blank">GeoServer</a>.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="service-box text-center mt-5">
+                    <svg class="bi text-primary" width="2rem" height="2rem" fill="currentColor">
+                        <use xlink:href="bootstrap-icons.svg#pencil-square"/>
+                    </svg>
+                    <h5 class="fw-light text-primary mt-4 text-uppercase">Creëer</h5>
+                    <p class="service-box-text mt-3 mb-0">Configureer de kaartlagen, stijling en formulieren. Vervolgens
+                        nodigt u gebruikers uit.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="service-box text-center mt-5">
+                    <svg class="bi text-primary" width="2rem" height="2rem" fill="currentColor">
+                        <use xlink:href="bootstrap-icons.svg#geo-fill"/>
+                    </svg>
+                    <h5 class="fw-light text-primary mt-4 text-uppercase">Verzamel</h5>
+                    <p class="service-box-text mt-3 mb-0">De toegewezen gebruikers kunnen direct locaties vastleggen en
+                        kaartgestuurde formulieren invullen.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="service-box text-center mt-5">
+                    <svg class="bi text-primary" width="2rem" height="2rem" fill="currentColor">
+                        <use xlink:href="bootstrap-icons.svg#graph-up"/>
+                    </svg>
+                    <h5 class="fw-light text-primary mt-4 text-uppercase">Analyseer</h5>
+                    <p class="service-box-text mt-3 mb-0">De vastgelegde gegevens gelden als één enkele bron van
+                        waarheid voor gebruik in uw hele organisatie.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="content-box section section-bg position-relative">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-6">
+                <div class="content-box-text pe-0 pe-md-5">
+                    <span class="pre-title text-dark small position-relative fw-bold text-uppercase">Cogo Collect 4</span>
+                    <h2 class="content-box-title text-dark display-6 fw-bolder mt-3 mb-4">Snapping & filtering</h2>
+                    <p>De nieuwste versie van de geo-data registratie app {{ .Site.Title }} ondersteunt nu ook <strong>snapping</strong>,
+                        <strong>filtering</strong> en <strong>topics</strong>. De app kan
+                        <strong>offline</strong> werken dankzij de geïntegreerde lokale database voor data en
+                        ondergronden.</p>
+                    <a href="#" class="btn btn-primary mt-4 d-inline-block fw-bold">Vraag uw gratis demo
+                        aan</a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="wings wings-dark position-relative mt-5 mt-lg-0">
+                    <div class="video-box ratio ratio-4x3 shadow-lg ps-0 ps-md-5 position-relative">
+                        <video controls="" preload="auto" autoplay="true" loop="true" playsinline=""
+                               class="html-video rounded html-video-bg-black">
+                            <source src="/video/cogo-4.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-6">
+                <div class="stats-box-text">
+                    <span class="pre-title small position-relative fw-bold text-dark text-uppercase">Functionaliteit</span>
+                    <h2 class="stats-box-title display-6 fw-bolder text-dark mt-3 mb-4">Eén tool voor alle gegevens</h2>
+                    <p>{{ .Site.Title }} biedt één gebruiksvriendelijke tool voor alle typen geo-data. Elke
+                        gebruiker kan zonder instructies deze app overal gebruiken. De meeste van onze gebruikers
+                        stellen hun formulieren op en trainen hun personeel in minder dan een dag.</p>
+                    <p>De gegevens worden eerst tijdelijk opgeslagen op het apparaat waarmee in het veld wordt
+                        ingewonnen. Zo zijn de gegevens - ook bij geen verbinding - altijd gewaarborgd. Wanneer er een
+                        connectie is met het internet, worden de gegevens doorgestuurd en bewaard op het datacenter.</p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="text-center ps-0 ps-lg-5">
+                    <div class="row gx-3">
+                        <div class="col-6 col-lg-6">
+                            <div class="stats-box bg-white mt-3 px-4 py-4">
+                                <svg class="bi text-primary m-4" width="3rem" height="3rem" fill="currentColor">
+                                    <use xlink:href="bootstrap-icons.svg#check2-all"/>
+                                </svg>
+                                <h6 class="fw-bolder">Eén tool</h6>
+                                <p class="text-muted mb-0 small">Alles-in-één tool: punten, lijnen en
+                                    vlakken</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-6">
+                            <div class="stats-box bg-white mt-3 px-4 py-4">
+                                <svg class="bi text-primary m-4" width="3rem" height="3rem" fill="currentColor">
+                                    <use xlink:href="bootstrap-icons.svg#emoji-smile"/>
+                                </svg>
+                                <h6 class="fw-bolder">Gebruiksvriendelijk</h6>
+                                <p class="text-muted mb-0 small">Maakt GIS software voor iedereen
+                                    begrijpelijk!</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-6">
+                            <div class="stats-box bg-white mt-3 px-4 py-4">
+                                <svg class="bi text-primary m-4" width="3rem" height="3rem" fill="currentColor">
+                                    <use xlink:href="bootstrap-icons.svg#hand-thumbs-up"/>
+                                </svg>
+                                <h6 class="fw-bolder">Prijs & kwaliteit</h6>
+                                <p class="text-muted mb-0 small">Betrouwbare GIS software voor een aantrekkelijke
+                                    prijs</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-6">
+                            <div class="stats-box bg-white mt-3 px-4 py-4">
+                                <svg class="bi text-primary m-4" width="3rem" height="3rem" fill="currentColor">
+                                    <use xlink:href="bootstrap-icons.svg#plug"/>
+                                </svg>
+                                <h6 class="fw-bolder" title="Web Feature Service">WFS-T</h6>
+                                <p class="text-muted mb-0 small">Voldoet 100% aan <a
+                                        href="https://digitaleoverheid.nl/nora" target="_blank">NORA</a> en <a
+                                        href="https://www.ogc.org/" target="_blank">OGC</a> standaarden</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="testimonials section bg-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="section-head text-center mx-auto narrow">
+                    <span class="pre-title small position-relative fw-bold text-white text-uppercase">Referenties</span>
+                    <h2 class="display-6 fw-bolder text-white mt-3">Voor elke organisatie</h2>
+                    <p class="section-subtitle m-3 text-muted">{{ .Site.Title }} helpt zeer uiteenlopende
+                        organisaties om efficiënter te werken met geodata. Momenteel maken gemeenten,
+                        veiligheidsregio's, aannemers en ingenieursbureau's gebruik van de applicatie. </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 col-md-6 col-lg-3">
+                <div class="mt-3 mt-md-5">
+                    <div class="card bg-dark border-0">
+                        <img width="100%" height="50%" style="align-self: center; max-width: 200px" src="/img/organisation-haarlem.svg" loading=lazy>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-6 col-lg-3">
+                <div class="mt-3 mt-md-5">
+                    <div class="card bg-dark border-0">
+                        <img width="100%" height="50%" style="align-self: center; max-width: 200px" src="/img/organisation-gotoproject.svg" loading=lazy>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-6 col-lg-3">
+                <div class="mt-3 mt-md-5">
+                    <div class="card bg-dark border-0">
+                        <img width="100%" height="50%" style="align-self: center; max-width: 200px" src="/img/organisation-vraa.svg" loading=lazy>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-6 col-lg-3">
+                <div class="mt-3 mt-md-5">
+                    <div class="card bg-dark border-0">
+                        <img width="100%" height="50%" style="align-self: center; max-width: 200px" src="/img/organisation-hektec.svg" loading=lazy>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="section-head text-center mx-auto narrow">
+                    <p class="section-subtitle m-5 text-muted">De doorontwikkeling van de app wordt mede gestuurd door
+                        de ervaringen en feedback van de
+                        gebruikers. De applicatie wordt hiermee steeds functioneler en completer. Laat ons weten wat
+                        voor soort gegevens u wilt verzamelen!</p>
+                    <a href="mailto:{{ .Site.Params.Email }}" class="btn btn-light mt-4 fw-bold">Neem contact
+                        met ons op</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section bg-white" id="platforms">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="section-head text-center mx-auto narrow">
+                    <span class="pre-title small position-relative fw-bold text-dark text-uppercase">Cross-platform</span>
+                    <h2 class="display-6 fw-bolder text-dark mt-3">Platforms</h2>
+                    <p class="section-subtitle mt-3 mb-0">{{ .Site.Title }} is uw alles-in-één werkruimte voor onderweg
+                        en op kantoor. De applicatie is beschikbaar voor de drie grote app-platforms iOS, Android,
+                        Windows en als een desktop-web-app.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-6">
+                <div class="service-box text-center m-5">
+                    <a href="https://apps.apple.com/nl/app/cogo-collect/id1043488559" target="_blank">
+                        <img width="256" height="80" src="/img/badge-ios.webp" alt="iOS Apple store" loading="lazy">
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6">
+                <div class="service-box text-center m-5">
+                    <a href="https://play.google.com/store/apps/details?id=com.baasgeo.cogo" target="_blank">
+                        <img width="256" height="80" src="/img/badge-android.webp" alt="Android Google store"
+                             loading="lazy">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-6">
+                <div class="service-box text-center m-5">
+                    <a href="https://apps.microsoft.com/store/detail/cogo-collect/9NFCVNQLGG5H" target="_blank">
+                        <img width="256" height="80" src="/img/badge-windows.webp" alt="Microsoft Windows store"
+                             loading="lazy">
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6">
+                <div class="service-box text-center m-5">
+                    <a href="https://app.cogocollect.com/" target="_blank">
+                        <img width="256" height="80" src="/img/badge-web.webp" alt="In browser as WebApp"
+                             loading="lazy">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="blog-posts section section-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="section-head text-center mx-auto narrow">
+                    <span class="pre-title small position-relative fw-bold text-dark text-uppercase">Blog</span>
+                    <h2 class="display-6 fw-bolder text-dark mt-3">Het laatste nieuws</h2>
+                    <p class="section-subtitle mt-3 mb-0">We delen graag het laatste nieuws & blogs van onze organisatie
+                        met jou!</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            {{- range ( where site.RegularPages "Section" "posts" | first 3 ) }}
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="blog-post bg-white rounded-3 overflow-hidden mt-4 mt-md-5">
+                    {{ $image := .Page.Resources.GetMatch "thumbnail.webp" }}
+                    {{ if $image }}
+                    <img src="{{ $image.RelPermalink }}" class="blog-thumb img-fluid w-100" alt="{{ .Title }}">
+                    {{ else }}
+                    <img src="/img/posts-thumbnail.svg" class="blog-thumb img-fluid w-100" alt="{{ .Title }}">
+                    {{ end }}
+                    <div class="blog-post-body p-4">
+                        <div class="blog-post-meta clearfix">
+                            <a href="#" class="blog-post-tag text-warning text-decoration-none me-4 small">{{ with
+                                .Params.tags }}{{ delimit . ", " }}{{ end }}</a>
+                        </div>
+                        <h3 class="blog-post-title mt-2 mb-0"><a href="{{ .Permalink }}"
+                                                                 class="text-dark text-truncate">{{ .Title }}</a></h3>
+                        <span class="post-date text-muted d-inline-block mt-2 small">{{ .Date | time.Format ":date_long" }}</span>
+                    </div>
+                </div>
+            </div>
+            {{- end}}
+        </div>
+    </div>
+</section>
+{{ end }}

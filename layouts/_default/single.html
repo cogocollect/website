@@ -1,0 +1,15 @@
+{{ define "main" }}
+<section class="hero bg-white">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col">
+                <div class="hero-content text-center">
+                    <span class="pre-title text-dark small fw-bold inline-block position-relative text-uppercase">{{ .Site.Title }}</span>
+                    <h1 class="display-6 fw-bolder text-dark mt-3">{{ .Title | markdownify}}</h1>
+                    <p class="mt-3 mb-0">{{ .Description | markdownify}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

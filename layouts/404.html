@@ -1,0 +1,24 @@
+{{ define "main" }}
+<section class="hero bg-white">
+    <div class="container">
+    </div>
+</section>
+<section class="section bg-white" id="platforms">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="section-head text-center mx-auto narrow">
+                    <span class="pre-title small position-relative fw-bold text-dark text-uppercase">{{ .Title | humanize }}</span>
+                    <h2 class="display-6 text-dark mt-3">Oeps verdwaald</h2>
+                    <p class="section-subtitle m-3">Je hebt een typefout gemaakt of deze pagina is verplaatst.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row m-5">
+            <div class="col text-center">
+                <a href="/" class="btn btn-primary shadow-sm mt-4 fw-bold ">Breng me naar de homepage</a>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

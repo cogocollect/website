@@ -1,0 +1,120 @@
+<section id="contact" class="cta bg-dark position-relative">
+    <div class="cta-img">
+        <img src="/img/icon_v3_round.svg" width="40%" height="40%">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-7 mt-5">
+                <div class="cta-content">
+                    <h3 class="display-4 text-white">{{ .Site.Title }}</h3>
+                    <p class="cta-text text-muted mt-3">{{ .Site.Title }} is een Nederlands bedrijf dat zich volledig richt op de toepassing van GIS voor zowel overheden als bedrijven. </p>
+                    <a href="mailto:{{ .Site.Params.Email }}" class="btn btn-primary mt-4 fw-bold">Neem contact met ons op</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer bg-dark text-muted">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+                <div class="footer-col mt-5 pe-4">
+                    <!--img src="/icons/icon_v3_round.svg" class="footer-logo mb-4" width="15%" height="15%"-->
+                    <p class="mb-0">Wij leveren kwalitatief hoogwaardige diensten op het gebied van OGC standaarden en
+                        Open Source GIS. We delen onze eigen expertise met communities en ontwikkelen GIS-software
+                        als onderdeel van onze missie.</p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                <div class="footer-col mt-5">
+                    <h3 class="footer-title text-white mb-4">Applicatie</h3>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="https://admin.cogocollect.com" target="_blank">
+                            <svg class="bi text-light m-1" width="1rem" height="1rem" fill="currentColor">
+                                <use xlink:href="/bootstrap-icons.svg#box-arrow-up-right"/>
+                            </svg> Beheerder</a></li>
+                        <li class="mb-2"><a href="https://app.cogocollect.com" target="_blank">
+                            <svg class="bi text-light m-1" width="1rem" height="1rem" fill="currentColor">
+                                <use xlink:href="/bootstrap-icons.svg#box-arrow-up-right"/>
+                            </svg> {{ .Site.Title }}</a></li>
+                        <li class="mb-2"><a href="#">
+                            <svg class="bi text-light m-1" width="1rem" height="1rem" fill="currentColor">
+                                <use xlink:href="/bootstrap-icons.svg#box-arrow-up-right"/>
+                            </svg> Documentatie</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+                <div class="footer-col mt-5">
+                    <h3 class="footer-title text-white mb-4">Website</h3>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="{{ .Site.BaseURL }}">Home</a></li>
+                        <li class="mb-2"><a href="/posts/">Blog</a></li>
+                        <li class="mb-2"><a href="/privacy/">Privacy</a></li>
+                        <li class="mb-2"><a href="/terms/">Voorwaarden</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="footer-col footer-contact mt-5">
+                    <h3 class="footer-title text-white mb-4">Contact</h3>
+                    <div class="mb-3"><a href="https://goo.gl/maps/cfrho6DeGM6E85CG8" target="_blank">
+                       <svg class="bi text-light m-1" width="1rem" height="1rem" fill="currentColor">
+                           <use xlink:href="/bootstrap-icons.svg#geo"/>
+                       </svg> Verlengde Lageweg 19, Hoorn NH</a></div>
+                    <div class="mb-3"><a href="mailto:{{ .Site.Params.Email }}">
+                        <svg class="bi text-light m-1" width="1rem" height="1rem" fill="currentColor">
+                           <use xlink:href="/bootstrap-icons.svg#envelope"/>
+                       </svg> {{ .Site.Params.Email }}</a></div>
+                    <div><a href="tel:0614878809">
+                        <svg class="bi text-light m-1" width="1rem" height="1rem" fill="currentColor">
+                           <use xlink:href="/bootstrap-icons.svg#phone"/>
+                       </svg> 06 - 1487 8809</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="row footer-credits text-center mt-5 py-3">
+            <div class="col-12 col-md-6">
+                <div class="footer-copy float-md-none float-lg-start">
+                    <p class="mb-0 small">&copy 2022 <a href="{{ .Site.BaseURL }}" class="text-decoration-none">{{ .Site.Title }}</a> is made in Holland</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="footer-social clearfix">
+                    <ul class="list-unstyled mb-0 float-md-none float-lg-end">
+                        <li class="d-inline-block me-2">
+                            <a href="#"  target="_blank">
+                            <svg class="bi text-light" width="1rem" height="1rem" fill="currentColor">
+                                <use xlink:href="/bootstrap-icons.svg#youtube"/>
+                            </svg>
+                        </a>
+                        </li>
+                        <li class="d-inline-block me-2">
+                            <a href="https://github.com/cogocollect" target="_blank">
+                            <svg class="bi text-light" width="1rem" height="1rem" fill="currentColor">
+                                <use xlink:href="/bootstrap-icons.svg#github"/>
+                            </svg>
+                        </a>
+                        </li>
+                        <li class="d-inline-block">
+                            <a href="https://www.linkedin.com/groups/12294389/" target="_blank">
+                                <svg class="bi text-light" width="1rem" height="1rem" fill="currentColor">
+                                    <use xlink:href="/bootstrap-icons.svg#linkedin"/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- JavaScript and dependencies -->
+{{ $bootstrap := resources.Get "js/bootstrap.bundle.min.js" }}
+<script src="{{ $bootstrap.RelPermalink }}" defer></script>
+{{ $bs5_lightbox := resources.Get "js/bs5-lightbox.bundle.min.js" }}
+<script src="{{ $bs5_lightbox.RelPermalink }}" defer></script>
+{{ if not (.Site.IsServer) }}
+<script defer data-domain="cogocollect.nl" src="https://plausible.io/js/plausible.js"></script>
+{{ end }}

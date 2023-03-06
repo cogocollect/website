@@ -1,0 +1,46 @@
+{{ define "main" }}
+<section class="hero bg-white">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col">
+                <div class="hero-content text-center">
+                    <span class="pre-title text-dark small fw-bold inline-block position-relative text-uppercase">{{ .Site.Title }}</span>
+                    <h1 class="display-6 fw-bolder text-dark mt-3">{{ .Title | markdownify}}</h1>
+                    <p class="section-subtitle m-3">{{ .Description | markdownify}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section bg-white" id="platforms">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                {{ range .Pages }}
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            {{ $image := .Page.Resources.GetMatch "thumbnail.webp" }}
+                            {{ if $image }}
+                            <img src="{{ $image.RelPermalink }}" class="card-img-left rounded-start" alt="{{ .Title }}">
+                            {{ else }}
+                            <img src="/img/posts-thumbnail.svg" class="card-img-left  rounded-start" alt="{{ .Title }}">
+                            {{ end }}
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h2 class="card-title"><a href="{{ .Permalink }}" class="card-link stretched-link">{{ .Title }}</a></h2>
+                                <p class="card-text text-truncate">{{ .Summary }}</p>
+                                <p class="card-text"><small class="text-muted">{{ .Date | time.Format ":date_long" }}</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
+
+

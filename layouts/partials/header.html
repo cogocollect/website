@@ -1,0 +1,54 @@
+<nav id="primary-navbar" class="primary-nav navbar navbar-expand-md bg-white fixed-top">
+    <div class="container px-4 px-sm-0">
+        <a class="navbar-brand" href="{{ .Site.BaseURL }}" title="{{ .Site.Title }}">
+            <img src="/img/icon_v3_round.svg" width="30em" height="30em">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
+            <svg class="bi text-dark" width="1rem" height="1rem" fill="currentColor">
+                <use xlink:href="/bootstrap-icons.svg#three-dots"/>
+            </svg>
+        </button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h3 class="offcanvas-title">{{ .Site.Title }}</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    {{ if .IsHome }}
+                    <li class="nav-item">
+                        <a class="nav-link" href="#functionality">Functies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#platforms">Platforms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    {{ else }}
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="{{ .Site.BaseURL }}">Home</a>
+                    </li>
+                    {{ end }}
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Login
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="https://admin.cogocollect.com" target="_blank">
+                                <svg class="bi text-dark" width="1rem" height="1rem" fill="currentColor">
+                                    <use xlink:href="/bootstrap-icons.svg#box-arrow-up-right"/>
+                                </svg> Beheerder</a></li>
+                            <li><a class="dropdown-item" href="https://app.cogocollect.com" target="_blank">
+                                <svg class="bi text-dark" width="1rem" height="1rem" fill="currentColor">
+                                    <use xlink:href="/bootstrap-icons.svg#box-arrow-up-right"/>
+                                </svg> {{ .Site.Title }}</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>

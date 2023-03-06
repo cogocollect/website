@@ -1,0 +1,120 @@
+{
+	"id": "05711438-8dc4-47b5-a05c-36a0c0906383",
+	"acceptMappedClaims": null,
+	"accessTokenAcceptedVersion": null,
+	"addIns": [],
+	"allowPublicClient": true,
+	"appRoles": [],
+	"oauth2AllowUrlPathMatching": false,
+	"createdDateTime": "2022-07-13T20:29:09Z",
+	"description": null,
+	"certification": null,
+	"disabledByMicrosoftStatus": null,
+	"groupMembershipClaims": "None",
+	"informationalUrls": {
+		"termsOfService": "https://cogocollect.com/terms/",
+		"support": null,
+		"privacy": "https://cogocollect.com/privacy/",
+		"marketing": null
+	},
+	"keyCredentials": [],
+	"knownClientApplications": [],
+	"name": "Cogo Collect",
+	"notes": "Cogo Collect is een slimme en veelzijdige app voor het registreren van uiteenlopende geo-data. De gegevens worden direct opgeslagen in een datacenter naar keuze via open standaarden.",
+	"oauth2AllowIdTokenImplicitFlow": true,
+	"oauth2AllowImplicitFlow": true,
+	"oauth2Permissions": [],
+	"oauth2RequirePostResponse": false,
+	"optionalClaims": {
+		"idToken": [
+			{
+				"additionalProperties": [],
+				"essential": false,
+				"name": "email",
+				"source": null
+			},
+			{
+				"additionalProperties": [],
+				"essential": false,
+				"name": "upn",
+				"source": null
+			},
+			{
+				"additionalProperties": [],
+				"essential": false,
+				"name": "family_name",
+				"source": null
+			},
+			{
+				"additionalProperties": [],
+				"essential": false,
+				"name": "given_name",
+				"source": null
+			},
+			{
+				"additionalProperties": [],
+				"essential": false,
+				"name": "preferred_username",
+				"source": null
+			}
+		],
+		"accessToken": [],
+		"saml2Token": []
+	},
+	"orgRestrictions": [],
+	"parentalControlSettings": {
+		"countriesBlockedForMinors": [],
+		"legalAgeGroupRule": "Allow"
+	},
+	"preAuthorizedApplications": [],
+	"replyUrlsWithType": [
+		{
+			"type": "InstalledClient",
+			"url": "msauth://com.baasgeo.cogo/SNQGOP%2FPiwobUjgA5wuKsWKPLUo%3D"
+		},
+		{
+			"type": "InstalledClient",
+			"url": "msauth://code/msauth.com.baasgeo.cogo%3A%2F%2Fauth"
+		},
+		{
+			"type": "InstalledClient",
+			"url": "msauth.com.baasgeo.cogo://auth"
+		},
+		{
+			"type": "Spa",
+			"url": "https://app.cogocollect.com/login/oauth"
+		},
+		{
+			"type": "Spa",
+			"url": "https://app.cogocollect.com/login/auto"
+		},
+		{
+			"type": "Spa",
+			"url": "https://admin.cogocollect.com/login/oauth"
+		}
+	],
+	"requiredResourceAccess": [
+		{
+			"resourceAppId": "00000003-0000-0000-c000-000000000000",
+			"resourceAccess": [
+				{
+					"id": "64a6cdd6-aab1-4aaf-94b8-3cc8405e90d0",
+					"type": "Scope"
+				},
+				{
+					"id": "14dad69e-099b-42c9-810b-d002981feec1",
+					"type": "Scope"
+				},
+				{
+					"id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+					"type": "Scope"
+				}
+			]
+		}
+	],
+	"samlMetadataUrl": null,
+	"signInUrl": "https://cogocollect.com",
+	"signInAudience": "AzureADMyOrg",
+	"tags": [],
+	"tokenEncryptionKeyId": null
+}

@@ -1,0 +1,7 @@
+<div class="row">
+  {{ range split .Inner "<--->" }}
+  {{ printf "<div class=\"col-md-12 col-lg-6\">" | htmlUnescape | safeHTML }}
+  {{ . | markdownify }}
+  {{ printf "</div>" | htmlUnescape | safeHTML }}
+  {{ end }}
+</div>

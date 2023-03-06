@@ -1,0 +1,7 @@
+{{ $href := default "/" (.Get "href") }}
+
+<a class="btn btn-primary fw-bold"
+    href="{{ $href | safeURL }}">
+    {{ with (.Get "image") }}<img src="{{ . | safeURL }}" class="bi me-2" width="30rem" height="30rem"/>{{ end }}
+    {{- .Inner | safeHTML -}}
+</a>
