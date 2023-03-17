@@ -388,7 +388,7 @@
         <div class="row">
             {{- range ( where site.RegularPages "Section" "posts" | first 3 ) }}
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="blog-post bg-white rounded-3 overflow-hidden mt-4 mt-md-5">
+                <div class="card blog-post bg-white rounded-3 overflow-hidden mt-4 mt-md-5">
                     {{ $image := .Page.Resources.GetMatch "thumbnail.webp" }}
                     {{ if $image }}
                     <img src="{{ $image.RelPermalink }}" class="blog-thumb img-fluid w-100" alt="{{ .Title }}">
@@ -404,6 +404,7 @@
                                                                  class="text-dark text-truncate">{{ .Title }}</a></h3>
                         <span class="post-date text-muted d-inline-block mt-2 small">{{ .Date | time.Format ":date_long" }}</span>
                     </div>
+                    <a href="{{ .Permalink }}" class="stretched-link"></a>
                 </div>
             </div>
             {{- end}}
