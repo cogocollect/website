@@ -2,6 +2,7 @@ Author = 'B. Baas'
 baseURL = 'https://www.cogocollect.nl/'
 disableKinds = ["taxonomy", "taxonomyTerm"]
 enableEmoji = true
+enableRobotsTXT = true
 languageCode = 'nl-nl'
 title = 'Cogo Collect'
 #uglyURLs = true
